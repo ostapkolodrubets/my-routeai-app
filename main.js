@@ -22,6 +22,7 @@ async function send() {
 
         const data = await res.json();
         console.log(data);
+        console.log(GEMINI_API_KEY)
 
         if(data) {
             document.getElementById("result").innerHTML = `
