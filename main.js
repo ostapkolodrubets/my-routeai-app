@@ -14,7 +14,7 @@ async function send() {
     const payload = { start_address: start, end_address: end };
 
     try {
-        const res = await fetch("https://hook.eu2.make.com/y9ianrfc2521t2g4vl44z6vwpscwhq5l", {
+        const res = await fetch("my-routeaibackend-app-production.up.railway.app", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(payload)
