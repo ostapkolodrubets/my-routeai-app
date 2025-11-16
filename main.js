@@ -14,7 +14,7 @@ async function send() {
     const payload = { start_address: start, end_address: end };
 
     try {
-        const res = await fetch("https://my-routeai-backend-production.up.railway.app/route", {
+        const res = await fetch("https://my-routeai-backend-production.up.railway.app", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(payload)
